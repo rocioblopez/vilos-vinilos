@@ -1,0 +1,293 @@
+@import "colores";
+
+@import "textos";
+
+
+
+.color__body{ 
+
+     background-color: $colorbody;
+     font-family:'Lato', sans-serif; 
+
+}
+
+
+#menu__completo{
+	
+  position: relative;
+  background: colorbody;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+ 
+    }
+
+
+#nosotros_formato{
+
+ position: relative;
+ background-color:#efefef;
+ border: 0px;
+}
+
+
+.header__logo {
+	width: 100px;
+	align-content: center;
+}
+
+
+#menu__estilo {
+
+    display: inline-block;
+    position: relative;
+	text-decoration: none;
+	color:$colorMenu;
+	width: 100%;
+	padding: 20px 25px 10px 25px;
+	align-content: flex-end;
+	align-items: flex-end;
+
+	}
+
+
+#menu__estilo:hover{
+
+    position: relative;
+	text-decoration: none;
+	color: $colorSelect;
+	width: 100%;
+	padding: 20px 25px 10px 25px;
+	font-size: 17px;
+    
+}
+
+.menu__desplegable{
+
+    position: relative;
+	text-decoration: none;
+	color:$colorMenu;
+	font-size: 14px;
+	padding: 10px 10px;
+
+}
+
+.menu__desplegable:hover {
+
+    display:block;
+    position:relative;
+	text-decoration: none;
+	font-size: 15px;
+	color: $colorSelect;
+	line-decoration: underline;
+	}
+
+.btn_inactivo{
+	
+	border: 0.5mm solid $colorMenu;
+	border-radius: 2MM;
+}
+
+.btn_inactivo:hover{
+
+    border: 0.5mm solid $colorMenu;
+	border-radius: 2MM;
+	background-color: $colorMenu;
+	color:$textobotonesAct;
+	
+}
+
+
+.btn_carro{
+	
+@extend.btn_inactivo;
+padding: 5px 10px 5px 10px;
+  
+}
+
+.btn_verdetalle{
+	
+@extend.btn_inactivo;
+color:$textobotonesIna;
+padding: 5px 10px 5px 10px;
+display:block;
+position:relative;
+align-content: center;
+align-items: center;
+text-align:center;
+
+}
+
+
+#espacio_carrusel{
+
+	padding: 50px 0px 50px 0px;
+	position: relative;
+	padding-top:70px;
+} 
+
+
+.tituloprincipal--caracteristicas{
+	
+	color: $Colortitulos;
+	font-size: $Titulos-size;
+}
+
+.titulolateral--caracteristicas{
+	
+	color:$ColorTituloLateral;
+	font-size:  $TituloLateral-size;
+}
+
+.titulosec--caracteristicas{
+	 
+	color: $ColorTituloSecundario;
+	font-size: $TitulosSecundarios;
+    padding-top: 25px;
+
+
+
+}
+
+$descripciones: grandes; 
+
+p1 {
+
+      @if $descripciones == grandes {
+             font-size:$DescripcionesGrandes;
+             color: $colorDescripciones;
+                      } 
+
+      @else if $descripciones == chico {
+             font-size:$DescripcionesChicas;
+     } 
+      }
+
+
+
+.Imag__Nosotros{
+	
+	border: 10px solid #48a998;
+}
+
+.tituloprincipalnosotros--caracteristicas{
+	
+	@extend.tituloprincipal--caracteristicas;
+
+}
+
+.texto__img{
+	
+background-color: $colorMenu;
+padding:35px;
+text-align: center;
+}
+
+p2{
+	
+font-size:$DescripcionesChicas;
+color: white;
+}
+
+h5{
+	
+	color: white;
+	font-size: $TitulosSecundarios;
+}
+
+.imagen--circulo{
+	
+width: 260px;
+border-radius: 130px;
+padding:50px;
+
+    display: inline-block;
+    position: relative;
+
+	align-content: center;
+	align-items: center;
+	text-align: center;
+
+
+}
+
+
+/* Contactanos */
+
+#contactanos__formato{
+	
+position: relative;
+margin-top: 100px;
+
+
+}
+
+
+.formulario__formato{
+
+  width: 250px; 
+  height: 30px;
+  transition:all 1s;
+  margin-top: 10px;
+
+}
+
+.formulario__formato:focus{
+
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+}
+
+
+.formulario__formato--espaciotexto{
+
+  width: 300px; 
+  height:150px;
+  transition:all 1s;
+}
+
+.formulario__formato--espaciotexto:focus{
+
+  width: 400px;
+  height: 250px;
+  font-size: 15px;
+}
+
+
+botones__juntos{
+
+display: inline-block;
+    position: relative;
+	
+}
+
+#btnsec_inactivo {
+.btn_verdetalle{
+	
+@extend.btn_inactivo;
+color:$textobotonesIna;
+padding: 5px 10px 5px 10px;
+display:block;
+position:relative;
+align-content: center;
+align-items: center;
+text-align:center;
+
+}
+
+
+
+
+#btnsec_activo{
+	
+@extend.btn_inactivo;
+color:$colorbody;
+padding: 5px 10px 5px 10px;
+display:block;
+position:relative;
+align-content: center;
+align-items: center;
+text-align:center;
+
+}
